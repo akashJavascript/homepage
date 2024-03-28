@@ -1,0 +1,237 @@
+.name-caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    padding: 3px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.about-me-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.about-me-img-container {
+    height: 300px;
+    width: 250px;
+    background-image: url('https://images.pexels.com/photos/20587031/pexels-photo-20587031/free-photo-of-woman-in-dress-lying-down-with-mirror-on-tree.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    box-shadow: 4px 9px 11px 0px rgba(209, 209, 209, 1);
+    justify-self: end;
+}
+.about-me-section {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.about-me-container {
+    height: 85%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.about-me-text-content {
+    height: 85%;
+    padding: 20px;
+    align-self: center;
+    box-shadow: 4px 9px 11px 0px rgba(209, 209, 209, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    background-color: white;
+}
+.about-me-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.about-me-text {
+    font-family: 'Roboto', serif;
+    color: rgb(104, 104, 104);
+    line-height: 1.5;
+}
+.logo-container {
+    align-self: end;
+    display: flex;
+    gap: 5px;
+}
+.about-me-bgimage {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(to top left, #fff 0%, #fff 50%, #0891b3 50%, #0891b3 100%);
+    z-index: -1;
+    transform: translateY(-10px) rotate(20deg) translateX(-50px);
+}
+body {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects-section {
+    margin-top: 200px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    place-items: center;
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.projects-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 4px 9px 11px 0px rgba(209, 209, 209, 1);
+    padding-bottom: 30px;
+}
+.project-img {
+    height: 200px;
+}
+.project-name-logos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.project-text {
+    font-family: 'Roboto', serif;
+    color: rgb(104, 104, 104);
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.project-name-header {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+.contact-image {
+    max-height: 300px;
+    object-fit: cover;
+    margin-left: 5px;
+    max-width: 100%;
+    height: auto;
+}
+.contact-me-section {
+    margin-top: 200px;
+    color: white;
+    background-color: #0891b3;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+}
+.contact-me-info {
+    font-family: 'Roboto', serif;
+    line-height: 1.5;
+}
+.contact-info-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+.contact-icon {
+    padding-right: 5px;
+}
+.contact-me-text {
+    margin-bottom: 20px;
+}
+.last-address {
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 822px) and (min-width: 581px) {
+    .content-wrapper {
+        position: relative;
+    }
+    .about-me-text-content {
+        transform: translateY(100px) translateX(-50px);
+        z-index: -1;
+        height: auto;
+        width: auto;
+        padding-left: 65px;
+        max-width: none;
+
+        min-width: 300px;
+    }
+    .logo-container {
+        display: none;
+    }
+    .about-me-bgimage {
+        transform: translateY(-40px) rotate(50deg) scale(1.5);
+    }
+    .about-me-img-container {
+        position: relative;
+    }
+    .name-caption {
+        transform: translateY(-230px) translateX(220px);
+    }
+}
+@media screen and (max-width: 580px) {
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .about-me-text-content {
+        box-shadow: none;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-me-bgimage {
+        transform: translateY(-155px) rotate(45deg) translateX(-105px);
+    }
+    .logo-container {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .contact-me-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .about-me-bgimage {
+        transform: translateY(-150px) rotate(5deg);
+    }
+}
